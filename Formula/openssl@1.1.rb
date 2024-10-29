@@ -1,7 +1,7 @@
 class OpensslAT11 < Formula
   desc "Cryptography and SSL/TLS Toolkit"
   homepage "https://www.openssl.org/"
-  url "https://www.openssl.org/source/openssl-1.1.1w.tar.gz"
+  url "https://openssl.org/source/old/1.1.0/openssl-1.1.0l.tar.gz"
   sha256 "74a2f756c64fd7386a29184dc0344f4831192d61dc2481a93a4c5dd727f41148"
 
   def install
