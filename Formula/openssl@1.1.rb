@@ -7,7 +7,7 @@ class OpensslAT11 < Formula
   def install
     system "arch -x86_64 ./config --prefix=#{prefix} --openssldir=#{etc}/openssl@1.1"
     system "make"
-    system "make", "install"
+    system "sudo make", "install"
   end
 
   def caveats
