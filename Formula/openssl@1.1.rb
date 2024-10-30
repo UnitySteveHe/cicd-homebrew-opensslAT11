@@ -5,7 +5,7 @@ class OpensslAT11 < Formula
   sha256 "74a2f756c64fd7386a29184dc0344f4831192d61dc2481a93a4c5dd727f41148"
 
   def install
-    system "arch -x86_64 ", "./config", "--prefix=#{prefix}", "--openssldir=#{etc}/openssl@1.1"
+    system "arch -x86_64 ./config --prefix=#{prefix} --openssldir=#{etc}/openssl@1.1"
     system "make"
     system "make", "install"
   end
