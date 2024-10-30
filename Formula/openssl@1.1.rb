@@ -7,7 +7,6 @@ class OpensslAT11 < Formula
   def install
     system "./config", "--prefix=#{prefix}", "--openssldir=#{etc}/openssl@1.1"
     system "make"
-    system "make", "test" # optional, for testing
     system "make", "install"
   end
 

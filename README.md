@@ -8,12 +8,12 @@ To use this tap, follow these steps:
 
 1. Add the tap to Homebrew:
   ```sh
-  brew tap UnitySteveHe/cicd-homebrew-opensslAT11
+  brew tap UnitySteveHe/homebrew-opensslAT11
   ```
 
 2. Install OpenSSL@1.1:
   ```sh
-  brew install openssl@1.1
+  brew install UnitySteveHe/homebrew-opensslAT11/openssl@1.1
   ```
 
 ## Usage
