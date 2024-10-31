@@ -1,11 +1,11 @@
 class OpensslAT11 < Formula
   desc "Cryptography and SSL/TLS Toolkit"
   homepage "https://www.openssl.org/"
-  url "https://openssl.org/source/old/1.1.0/openssl-1.1.0l.tar.gz"
-  sha256 "74a2f756c64fd7386a29184dc0344f4831192d61dc2481a93a4c5dd727f41148"
+  url "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1w/openssl-1.1.1w.tar.gz"
+  sha256 "cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8"
 
   def install
-    system "arch -x86_64 ./config --prefix=#{prefix} --openssldir=#{etc}/openssl@1.1"
+    system "./config --prefix=#{prefix} --openssldir=#{etc}/openssl@1.1"
     system "make"
     system "make", "install"
   end
